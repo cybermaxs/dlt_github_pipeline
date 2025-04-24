@@ -1,7 +1,5 @@
 name: Run github_stargazers pipeline from github_pipeline.py
 'on':
-  schedule:
-  - cron: '*/30 * * * *'
   workflow_dispatch: null
 env:
   SOURCES__GITHUB__ACCESS_TOKEN: ${{ secrets.SOURCES__GITHUB__ACCESS_TOKEN }}
